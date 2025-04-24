@@ -1,5 +1,5 @@
 # MambaHash: Visual State Space Deep Hashing Model for Large-Scale Image Retrieval（ICMR 2025）
 
 ## The Overall Architecture Of MambaHash
-![figure2.pdf](https://github.com/user-attachments/files/19890406/figure2.pdf)
-Figure.1. The detailed architecture of the proposed HybridHash. We adopt similar segmentation as ViT to divide the image with finer granularity and feed the generated image patches into the Transformer Block. The whole hybrid network consists of three stages to gradually decrease the resolution and increase the channel dimension. Interaction modules followed by each stage to promote the communication of information about the image blocks. Finally, the binary codes are output after the hash layer.
+![figure2](https://github.com/user-attachments/assets/70f4b93c-e0bd-47c5-be48-4a4081227c0e)
+The detailed architecture of the proposed MambaHash. MambaHash accepts pairwise images as input, and adopts a similar stem architecture to divide the images into overlapping patches with the generated patches fed into the Mamba block. The whole model architecture consists of four stages, followed by an Adaptive feature enhancement module to increase feature diversity. Finally, the binary codes are output after the hashing layer.
