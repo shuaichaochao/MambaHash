@@ -6,6 +6,10 @@ Figure.1. The detailed architecture of the proposed MambaHash. MambaHash accepts
 
 ![image](https://github.com/user-attachments/assets/eaa07f7e-db3c-4f1f-a312-3eb5135d27f3)
 
+We further investigate the mainstream backbone networks utilized by existing deep hashing methods, including convolutional neural networks (exemplified by ResNet50), Transformer (exemplified by ViT-L/32), and hybrid networks (exemplified by HybirdHash).
+![image](https://github.com/user-attachments/assets/ed7c5a73-c76e-412b-91bc-6f18ecb09acc)
+![image](https://github.com/user-attachments/assets/0d08e97b-f6b6-4da8-8a10-6d6cff5841a4)
+
 
 ## Datasets
 
