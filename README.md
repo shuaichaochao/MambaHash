@@ -10,7 +10,8 @@ We further investigate the mainstream backbone networks utilized by existing dee
 ![image](https://github.com/user-attachments/assets/ed7c5a73-c76e-412b-91bc-6f18ecb09acc)
 ![image](https://github.com/user-attachments/assets/0d08e97b-f6b6-4da8-8a10-6d6cff5841a4)
 
-
+##Notice
+We utilized partial pre-trained model weights, named groupmamba_small_ema.pth, with the link [Amshaker](https://github.com/Amshaker/GroupMamba)
 ## Datasets
 
 The following references are also derived from a [swuxyj](https://github.com/swuxyj/DeepHash-pytorch)
