@@ -17,6 +17,7 @@ We utilized partial pre-trained model weights, named groupmamba_small_ema.pth, w
 Next, you need to install a package specific to Mamba, which can also be found at link [Amshaker](https://github.com/Amshaker/GroupMamba). Please install kernels/selective_scan according to the instructions, you will need cuda>=11.3 and gcc>=8.1.0. 
 
 Other necessary environments.
+
 python=3.8.3
 cuda=11.3
 pytorch=1.12.1   
