@@ -14,7 +14,7 @@ We further investigate the mainstream backbone networks utilized by existing dee
 
 We utilized partial pre-trained model weights, named groupmamba_small_ema.pth, with the link [Amshaker](https://github.com/Amshaker/GroupMamba).
 
-Next, you need to install a package specific to Mamba, which can also be found at link [Amshaker](https://github.com/Amshaker/GroupMamba). Please install kernels/selective_scan according to the instructions.
+Next, you need to install a package specific to Mamba, which can also be found at link [Amshaker](https://github.com/Amshaker/GroupMamba). Please install kernels/selective_scan according to the instructions, you will need cuda>=11.3 and gcc>=8.1.0. 
 
 ## Datasets
 
