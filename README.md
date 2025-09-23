@@ -22,7 +22,13 @@ python=3.8.3
 
 cuda=11.3
 
+cudnn=8.3.2_0
+
 pytorch=1.12.1   
+
+torchaudio=0.12.1
+
+torchvision=0.13.1
 
 pandas=2.0.3  
 
@@ -38,11 +44,17 @@ loguru=0.7.0
 
 opencv-python=4.10.0.84 
 
-scikit-image=0.21.0      
+scikit-image=0.21.0    
+
+scikit-learn=1.3.2
 
 einops=0.8.1            
 
 mkl=2024.0.0
+
+tqdm=4.67.1
+
+numpy=1.23.5
 
 ## Datasets
 
