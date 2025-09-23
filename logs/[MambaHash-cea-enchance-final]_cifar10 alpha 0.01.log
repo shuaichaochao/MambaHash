@@ -1,0 +1,125 @@
+2024-12-29 10:30:02.484 | INFO     | __main__:<module>:252 - {'alpha': 0.01, 'lamada': 0, 'optimizer': 'RMSprop', 'lr': 2e-05, 'weight_decay': 1e-07, 'momen': 0.9, 'lr_step': '10', 'info': '[MambaHash-cea-enchance-final]', 'step_continuation': 20, 'resize_size': 256, 'crop_size': 224, 'batch_size': 32, 'dataset': 'cifar10', 'epoch': 8, 'test_map': 1, 'save_path': 'save/HashNet', 'device': device(type='cuda', index=0), 'bit_list': [16, 32, 48, 64], 'pretrained_dir': 'checkpoint/groupmamba_small_ema.pth', 'img_size': 224, 'patch_size': 4, 'in_chans': 3, 'num_work': 3, 'model_type': 'ViT-L_16', 'top_img': 10, 'num_train': 5000, 'num_query': 1000, 'topK': -1, 'n_class': 10, 'data_path': '/dataset/cifar10', 'data': {'train_set': {'list_path': '/dataset/cifar10/train.txt', 'batch_size': 32}, 'database': {'list_path': '/dataset/cifar10/database.txt', 'batch_size': 32}, 'test': {'list_path': '/dataset/cifar10/test.txt', 'batch_size': 32}}}
+2024-12-29 10:30:05.339 | INFO     | utils.tools:cifar_dataset:161 - train_dataset: 5000
+2024-12-29 10:30:05.340 | INFO     | utils.tools:cifar_dataset:162 - test_dataset: 1000
+2024-12-29 10:30:05.340 | INFO     | utils.tools:cifar_dataset:163 - database_dataset: 54000
+2024-12-29 10:30:07.978 | INFO     | __main__:train_val:122 - Loading:
+2024-12-29 10:30:09.453 | INFO     | __main__:train_val:125 - Pretrain weights loaded.
+2024-12-29 10:30:44.246 | INFO     | __main__:train_val:133 - Total Parameter: 	34.74 M
+2024-12-29 10:30:44.248 | INFO     | __main__:train_val:134 - Total Flops: 	7.32 GMac
+2024-12-29 10:30:44.306 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 1/ 8][10:30:44] bit:16, dataset:cifar10, training....
+2024-12-29 10:32:09.141 | INFO     | __main__:train_val:222 -  loss:0.63980, allSimilarloss: 0.63727, allquantizationloss: 0.25330
+2024-12-29 10:36:19.774 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:1 bit:16 dataset:cifar10 MAP:0.8956 Best MAP: 0.8956
+2024-12-29 10:36:19.775 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 2/ 8][10:36:19] bit:16, dataset:cifar10, training....
+2024-12-29 10:37:31.742 | INFO     | __main__:train_val:222 -  loss:0.48475, allSimilarloss: 0.48366, allquantizationloss: 0.10911
+2024-12-29 10:41:41.995 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:2 bit:16 dataset:cifar10 MAP:0.9047 Best MAP: 0.9047
+2024-12-29 10:41:41.996 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 3/ 8][10:41:41] bit:16, dataset:cifar10, training....
+2024-12-29 10:42:52.473 | INFO     | __main__:train_val:222 -  loss:0.39643, allSimilarloss: 0.39575, allquantizationloss: 0.06739
+2024-12-29 10:47:02.489 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:3 bit:16 dataset:cifar10 MAP:0.9402 Best MAP: 0.9402
+2024-12-29 10:47:02.490 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 4/ 8][10:47:02] bit:16, dataset:cifar10, training....
+2024-12-29 10:48:13.269 | INFO     | __main__:train_val:222 -  loss:0.36573, allSimilarloss: 0.36520, allquantizationloss: 0.05225
+2024-12-29 10:52:22.670 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:4 bit:16 dataset:cifar10 MAP:0.9444 Best MAP: 0.9444
+2024-12-29 10:52:22.671 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 5/ 8][10:52:22] bit:16, dataset:cifar10, training....
+2024-12-29 10:53:32.695 | INFO     | __main__:train_val:222 -  loss:0.35302, allSimilarloss: 0.35261, allquantizationloss: 0.04112
+2024-12-29 10:57:42.598 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:5 bit:16 dataset:cifar10 MAP:0.9487 Best MAP: 0.9487
+2024-12-29 10:57:42.599 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 6/ 8][10:57:42] bit:16, dataset:cifar10, training....
+2024-12-29 10:58:53.301 | INFO     | __main__:train_val:222 -  loss:0.34846, allSimilarloss: 0.34811, allquantizationloss: 0.03486
+2024-12-29 11:03:03.455 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:6 bit:16 dataset:cifar10 MAP:0.9428 Best MAP: 0.9487
+2024-12-29 11:03:03.456 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 7/ 8][11:03:03] bit:16, dataset:cifar10, training....
+2024-12-29 11:04:13.831 | INFO     | __main__:train_val:222 -  loss:0.34336, allSimilarloss: 0.34303, allquantizationloss: 0.03265
+2024-12-29 11:08:24.083 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:7 bit:16 dataset:cifar10 MAP:0.9430 Best MAP: 0.9487
+2024-12-29 11:08:24.084 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 8/ 8][11:08:24] bit:16, dataset:cifar10, training....
+2024-12-29 11:09:34.825 | INFO     | __main__:train_val:222 -  loss:0.34147, allSimilarloss: 0.34114, allquantizationloss: 0.03294
+2024-12-29 11:13:45.342 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:8 bit:16 dataset:cifar10 MAP:0.9366 Best MAP: 0.9487
+2024-12-29 11:13:46.882 | INFO     | utils.tools:cifar_dataset:161 - train_dataset: 5000
+2024-12-29 11:13:46.883 | INFO     | utils.tools:cifar_dataset:162 - test_dataset: 1000
+2024-12-29 11:13:46.883 | INFO     | utils.tools:cifar_dataset:163 - database_dataset: 54000
+2024-12-29 11:13:48.172 | INFO     | __main__:train_val:122 - Loading:
+2024-12-29 11:13:48.409 | INFO     | __main__:train_val:125 - Pretrain weights loaded.
+2024-12-29 11:13:49.372 | INFO     | __main__:train_val:133 - Total Parameter: 	36.01 M
+2024-12-29 11:13:49.374 | INFO     | __main__:train_val:134 - Total Flops: 	7.38 GMac
+2024-12-29 11:13:49.386 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 1/ 8][11:13:49] bit:32, dataset:cifar10, training....
+2024-12-29 11:15:03.288 | INFO     | __main__:train_val:222 -  loss:0.60072, allSimilarloss: 0.59820, allquantizationloss: 0.25272
+2024-12-29 11:19:15.962 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:1 bit:32 dataset:cifar10 MAP:0.9220 Best MAP: 0.9220
+2024-12-29 11:19:16.015 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 2/ 8][11:19:16] bit:32, dataset:cifar10, training....
+2024-12-29 11:20:27.724 | INFO     | __main__:train_val:222 -  loss:0.34884, allSimilarloss: 0.34813, allquantizationloss: 0.07128
+2024-12-29 11:24:40.502 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:2 bit:32 dataset:cifar10 MAP:0.9461 Best MAP: 0.9461
+2024-12-29 11:24:40.503 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 3/ 8][11:24:40] bit:32, dataset:cifar10, training....
+2024-12-29 11:25:50.774 | INFO     | __main__:train_val:222 -  loss:0.21720, allSimilarloss: 0.21682, allquantizationloss: 0.03721
+2024-12-29 11:30:04.033 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:3 bit:32 dataset:cifar10 MAP:0.9382 Best MAP: 0.9461
+2024-12-29 11:30:04.034 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 4/ 8][11:30:04] bit:32, dataset:cifar10, training....
+2024-12-29 11:31:14.367 | INFO     | __main__:train_val:222 -  loss:0.18322, allSimilarloss: 0.18293, allquantizationloss: 0.02846
+2024-12-29 11:35:26.310 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:4 bit:32 dataset:cifar10 MAP:0.9519 Best MAP: 0.9519
+2024-12-29 11:35:26.310 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 5/ 8][11:35:26] bit:32, dataset:cifar10, training....
+2024-12-29 11:36:36.835 | INFO     | __main__:train_val:222 -  loss:0.17490, allSimilarloss: 0.17467, allquantizationloss: 0.02341
+2024-12-29 11:40:48.138 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:5 bit:32 dataset:cifar10 MAP:0.9444 Best MAP: 0.9519
+2024-12-29 11:40:48.139 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 6/ 8][11:40:48] bit:32, dataset:cifar10, training....
+2024-12-29 11:41:58.042 | INFO     | __main__:train_val:222 -  loss:0.16997, allSimilarloss: 0.16976, allquantizationloss: 0.02115
+2024-12-29 11:46:10.725 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:6 bit:32 dataset:cifar10 MAP:0.9486 Best MAP: 0.9519
+2024-12-29 11:46:10.726 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 7/ 8][11:46:10] bit:32, dataset:cifar10, training....
+2024-12-29 11:47:20.989 | INFO     | __main__:train_val:222 -  loss:0.16545, allSimilarloss: 0.16524, allquantizationloss: 0.02016
+2024-12-29 11:51:32.965 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:7 bit:32 dataset:cifar10 MAP:0.9530 Best MAP: 0.9530
+2024-12-29 11:51:32.966 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 8/ 8][11:51:32] bit:32, dataset:cifar10, training....
+2024-12-29 11:52:43.342 | INFO     | __main__:train_val:222 -  loss:0.16293, allSimilarloss: 0.16273, allquantizationloss: 0.02005
+2024-12-29 11:56:55.894 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:8 bit:32 dataset:cifar10 MAP:0.9518 Best MAP: 0.9530
+2024-12-29 11:56:58.258 | INFO     | utils.tools:cifar_dataset:161 - train_dataset: 5000
+2024-12-29 11:56:58.259 | INFO     | utils.tools:cifar_dataset:162 - test_dataset: 1000
+2024-12-29 11:56:58.259 | INFO     | utils.tools:cifar_dataset:163 - database_dataset: 54000
+2024-12-29 11:57:00.346 | INFO     | __main__:train_val:122 - Loading:
+2024-12-29 11:57:01.863 | INFO     | __main__:train_val:125 - Pretrain weights loaded.
+2024-12-29 11:57:03.792 | INFO     | __main__:train_val:133 - Total Parameter: 	38.99 M
+2024-12-29 11:57:03.794 | INFO     | __main__:train_val:134 - Total Flops: 	7.53 GMac
+2024-12-29 11:57:03.881 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 1/ 8][11:57:03] bit:48, dataset:cifar10, training....
+2024-12-29 11:58:19.423 | INFO     | __main__:train_val:222 -  loss:0.59439, allSimilarloss: 0.59145, allquantizationloss: 0.29321
+2024-12-29 12:02:42.417 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:1 bit:48 dataset:cifar10 MAP:0.9240 Best MAP: 0.9240
+2024-12-29 12:02:42.418 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 2/ 8][12:02:42] bit:48, dataset:cifar10, training....
+2024-12-29 12:03:53.894 | INFO     | __main__:train_val:222 -  loss:0.30165, allSimilarloss: 0.30079, allquantizationloss: 0.08613
+2024-12-29 12:08:16.835 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:2 bit:48 dataset:cifar10 MAP:0.9516 Best MAP: 0.9516
+2024-12-29 12:08:16.836 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 3/ 8][12:08:16] bit:48, dataset:cifar10, training....
+2024-12-29 12:09:26.994 | INFO     | __main__:train_val:222 -  loss:0.14321, allSimilarloss: 0.14285, allquantizationloss: 0.03590
+2024-12-29 12:13:49.757 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:3 bit:48 dataset:cifar10 MAP:0.9366 Best MAP: 0.9516
+2024-12-29 12:13:49.758 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 4/ 8][12:13:49] bit:48, dataset:cifar10, training....
+2024-12-29 12:14:55.362 | INFO     | __main__:train_val:222 -  loss:0.10663, allSimilarloss: 0.10637, allquantizationloss: 0.02609
+2024-12-29 12:19:19.605 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:4 bit:48 dataset:cifar10 MAP:0.9378 Best MAP: 0.9516
+2024-12-29 12:19:19.611 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 5/ 8][12:19:19] bit:48, dataset:cifar10, training....
+2024-12-29 12:20:25.278 | INFO     | __main__:train_val:222 -  loss:0.10196, allSimilarloss: 0.10170, allquantizationloss: 0.02607
+2024-12-29 12:24:47.701 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:5 bit:48 dataset:cifar10 MAP:0.9366 Best MAP: 0.9516
+2024-12-29 12:24:47.702 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 6/ 8][12:24:47] bit:48, dataset:cifar10, training....
+2024-12-29 12:25:53.975 | INFO     | __main__:train_val:222 -  loss:0.10104, allSimilarloss: 0.10078, allquantizationloss: 0.02600
+2024-12-29 12:30:15.712 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:6 bit:48 dataset:cifar10 MAP:0.9378 Best MAP: 0.9516
+2024-12-29 12:30:15.713 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 7/ 8][12:30:15] bit:48, dataset:cifar10, training....
+2024-12-29 12:31:22.899 | INFO     | __main__:train_val:222 -  loss:0.10231, allSimilarloss: 0.10205, allquantizationloss: 0.02611
+2024-12-29 12:35:45.230 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:7 bit:48 dataset:cifar10 MAP:0.9368 Best MAP: 0.9516
+2024-12-29 12:35:45.231 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 8/ 8][12:35:45] bit:48, dataset:cifar10, training....
+2024-12-29 12:36:51.290 | INFO     | __main__:train_val:222 -  loss:0.10244, allSimilarloss: 0.10218, allquantizationloss: 0.02615
+2024-12-29 12:41:12.797 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:8 bit:48 dataset:cifar10 MAP:0.9373 Best MAP: 0.9516
+2024-12-29 12:41:14.346 | INFO     | utils.tools:cifar_dataset:161 - train_dataset: 5000
+2024-12-29 12:41:14.346 | INFO     | utils.tools:cifar_dataset:162 - test_dataset: 1000
+2024-12-29 12:41:14.346 | INFO     | utils.tools:cifar_dataset:163 - database_dataset: 54000
+2024-12-29 12:41:15.687 | INFO     | __main__:train_val:122 - Loading:
+2024-12-29 12:41:16.048 | INFO     | __main__:train_val:125 - Pretrain weights loaded.
+2024-12-29 12:41:17.422 | INFO     | __main__:train_val:133 - Total Parameter: 	46.65 M
+2024-12-29 12:41:17.424 | INFO     | __main__:train_val:134 - Total Flops: 	7.9 GMac
+2024-12-29 12:41:17.436 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 1/ 8][12:41:17] bit:64, dataset:cifar10, training....
+2024-12-29 12:42:33.559 | INFO     | __main__:train_val:222 -  loss:0.62887, allSimilarloss: 0.62476, allquantizationloss: 0.41100
+2024-12-29 12:47:08.353 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:1 bit:64 dataset:cifar10 MAP:0.9359 Best MAP: 0.9359
+2024-12-29 12:47:08.354 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 2/ 8][12:47:08] bit:64, dataset:cifar10, training....
+2024-12-29 12:48:19.944 | INFO     | __main__:train_val:222 -  loss:0.33173, allSimilarloss: 0.33066, allquantizationloss: 0.10663
+2024-12-29 12:52:55.003 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:2 bit:64 dataset:cifar10 MAP:0.9254 Best MAP: 0.9359
+2024-12-29 12:52:55.004 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 3/ 8][12:52:55] bit:64, dataset:cifar10, training....
+2024-12-29 12:54:05.899 | INFO     | __main__:train_val:222 -  loss:0.12501, allSimilarloss: 0.12456, allquantizationloss: 0.04487
+2024-12-29 12:58:39.544 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:3 bit:64 dataset:cifar10 MAP:0.9224 Best MAP: 0.9359
+2024-12-29 12:58:39.545 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 4/ 8][12:58:39] bit:64, dataset:cifar10, training....
+2024-12-29 12:59:50.173 | INFO     | __main__:train_val:222 -  loss:0.06641, allSimilarloss: 0.06617, allquantizationloss: 0.02318
+2024-12-29 13:04:24.547 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:4 bit:64 dataset:cifar10 MAP:0.9526 Best MAP: 0.9526
+2024-12-29 13:04:24.549 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 5/ 8][13:04:24] bit:64, dataset:cifar10, training....
+2024-12-29 13:05:32.814 | INFO     | __main__:train_val:222 -  loss:0.04733, allSimilarloss: 0.04718, allquantizationloss: 0.01485
+2024-12-29 13:10:06.881 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:5 bit:64 dataset:cifar10 MAP:0.9528 Best MAP: 0.9528
+2024-12-29 13:10:06.882 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 6/ 8][13:10:06] bit:64, dataset:cifar10, training....
+2024-12-29 13:11:13.295 | INFO     | __main__:train_val:222 -  loss:0.04097, allSimilarloss: 0.04083, allquantizationloss: 0.01365
+2024-12-29 13:15:47.663 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:6 bit:64 dataset:cifar10 MAP:0.9522 Best MAP: 0.9528
+2024-12-29 13:15:47.664 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 7/ 8][13:15:47] bit:64, dataset:cifar10, training....
+2024-12-29 13:16:53.676 | INFO     | __main__:train_val:222 -  loss:0.04007, allSimilarloss: 0.03993, allquantizationloss: 0.01353
+2024-12-29 13:21:27.525 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:7 bit:64 dataset:cifar10 MAP:0.9524 Best MAP: 0.9528
+2024-12-29 13:21:27.546 | INFO     | __main__:train_val:176 - [MambaHash-cea-enchance-final][ 8/ 8][13:21:27] bit:64, dataset:cifar10, training....
+2024-12-29 13:22:34.574 | INFO     | __main__:train_val:222 -  loss:0.03973, allSimilarloss: 0.03959, allquantizationloss: 0.01355
+2024-12-29 13:27:07.927 | INFO     | utils.tools:validate:346 - [MambaHash-cea-enchance-final] epoch:8 bit:64 dataset:cifar10 MAP:0.9524 Best MAP: 0.9528
